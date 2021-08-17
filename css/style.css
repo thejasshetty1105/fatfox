@@ -129,7 +129,7 @@ a:active {
 
 @media screen and (max-width: 768px) {
   .probootstrap-navbar {
-    background: white;
+    background: black;
     -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
   }
@@ -545,7 +545,7 @@ a:active {
 }
 
 .probootstrap-navbar.scrolled {
-  background: #ffffff;
+  background: black;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
 }
