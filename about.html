@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FatFox - Pop up Kitchen</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <style>
+      /* CSS Grid */
+      .grid-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          padding-top: 70px;
+      }
+        
+      .grid-container > div {
+        text-align: center;
+        margin: 10px;
+        justify-content: space-between;
+        font-size: 26px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      /* End of Grid */
+
+      * {
+        box-sizing: border-box;
+      }
+      
+      /* Creates equal columns that float next to each other */
+      .column {
+        background-color: black;
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .small {
+        width: 25%;
+      }
+
+      .little {
+        width: 35%;
+      }
+
+      .half {
+        width: 50%;
+      }
+
+      .seventy {
+        width: 65%;
+      }
+
+      .button1 {
+        color: darkorange; 
+        width: 150px; 
+        border-radius: 25px; 
+        background-color: black;
+      }
+
+      .button2 {
+        color: black; 
+        width: 150px; 
+        border-radius: 25px; 
+        background-color: darkorange;
+      }
+
+      .colr , .colr1 {
+        color: darkorange;
+      }
+
+      button:hover {
+        color: white;
+        width: 200px;
+        height: 40px;
+      }
+
+      /* Responsive layout */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+
+      }
+    </style>
+    
+    <!-- Fixed navbar -->
+    
+    <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="The Fatfox">The Fatfox</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="franchise.html">Franchise</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="flexslider" data-section="welcome">
+      <ul class="slides">
+        <li style="background-image: url(img/hero_bg_1.jpg)" class="overlay" data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Welcome</h1>
+                  <h3 class="secondary-heading">The Resto</h3>
+                  <p class="sub-heading">A free bootstrap website template by <a href="https://uicookies.com">uicookies.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(img/hero_bg_2.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Dine</h1>
+                  <h3 class="secondary-heading">With Us</h3>
+                  <p class="sub-heading">A free bootstrap website template by <a href="https://uicookies.com">uicookies.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </li>
+        <li style="background-image: url(img/hero_bg_3.jpg)" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading">Enjoy</h1>
+                  <h3 class="secondary-heading">With Us</h3>
+                  <p class="sub-heading">A free bootstrap website template by <a href="https://uicookies.com">uicookies.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_5.jpg); background-size: 100% 100%;"  data-stellar-background-ratio="0.5" data-section="franchise">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center probootstrap-animate">
+            <div class="probootstrap-heading">
+              <h2 class="primary-heading">Franchise</h2>
+              <h3 class="secondary-heading">Business of building business</h3>
+              <button class="button2" onclick="window.location.href='franchise.html'" id="nwpg">Apply Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="probootstrap-section probootstrap-bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 text-center probootstrap-animate">
+              <div class="probootstrap-heading dark">
+                <h1 class="primary-heading">Features</h1>
+                <!-- <h3 class="secondary-heading">Our Store</h3> -->
+                <span class="seperator">* * *</span>
+              </div>
+              <p>Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est molestiae enim a voluptate totam natus modi debitis dicta impedit voluptatum quod sapiente illo saepe explicabo quisquam perferendis labore et illum suscipit</p>
+              <p><a href="#" class="probootstrap-custom-link">About Us</a></p>
+            </div>
+            <div class="col-md-6 col-md-push-1 probootstrap-animate">
+              <p><img src="img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
+            </div>
+          </div>
+          <!-- END row -->
+        </div>
+      </section>
+    <section class="probootstrap-section probootstrap-bg-white" data-section="contact">
+      <h1 class="primary-heading" style="text-align: center;"><b>Connect With Us</b></h1>
+        </div class="row">
+          <div class="column small">
+              <h3 class="colr"><b>Contact Us:</b></h3><br>
+              <p style="font-size: x-large;"><img src="img/email.png" alt="email" width="30px" height="30px"> info@foxwel.com</p><br>
+              <p style="font-size: x-large;"><img src="img/phone.png" alt="phone" width="30px" height="30px"> +91-9611124041</p>
+          </div>
+          <div class="column small">
+            <h3 class="colr"><b>Quick Links</b></h3><br>
+            <ul style="list-style-type: square;">
+              <li><a href="https://foxwel.com/" style="font-size: x-large;">About Us</a></li>
+              <li><a href="franchise.html" style="font-size: x-large;">Franchise</a></li>
+              <li>About Us</li>
+            </ul>
+          </div>
+          <div class="column half" style="padding-top: 40px;">
+            <p style="font-size: x-large;">Enter you email ID here to receive updates from our team on offers and special discounts</p>
+            <input style="width: 350px;" type="email" id="emailId" placeholder="Enter your email ID">
+            <input class="button2"  type="submit" value="Submit">
+          </div>
+        </div>
+    </section>
+
+    <section class="probootstrap-footer"> 
+      <div class="column little" >
+        <h3 class="colr"><b>Delivering in:</b></h3><br>
+        <p style="font-size: x-large;"><b>Mangalore , Deralakatte</b></p>
+      </div>
+      <div class="column seventy">
+        <h3 class="colr"><b>Open Hours</b></h3>
+        <div class="row">
+          <div class="col-md-2">
+            <p style="font-size: large;">Monday - Friday <br> 6:00pm - 12:00am</p>
+          </div>
+          <div class="col-md-2">
+            <p style="font-size: large;">Saturday - Sunday <br> 9:00am - 12:00am</p>
+          </div>
+          <div class="col-md-8">
+            <p style="font-size: large; ">Available for Catering Email or Call Us</p>
+          </div>
+        </div>
+      </div>  
+    </section>
+    <section class="probootstrap-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="copyright-text">&copy; Foxwel IT 2021</p>
+          </div>
+          <div class="col-md-4">
+            <ul class="probootstrap-footer-social right">
+              <li><a href="https://wa.link/2bv0rp"><i class="icon-whatsapp"></i></a></li>
+              <li><a href="https://instagram.com/fatfox.in?utm_medium=copy_link"><i class="icon-instagram"></i></a></li>
+              <li><a href="https://www.facebook.com/thefatfoxin-100644388721940/?ref=py_c"><i class="icon-facebook"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.min.js"></script>
+
+  </body>
+</html>
