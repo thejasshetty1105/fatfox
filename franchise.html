@@ -45,17 +45,28 @@
         font-size: 26px;
       }
 
-      .flex-container1 {
+      .flex-container-feat {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         align-content: center;
+        justify-content: space-around;
+        margin: 18px;
+      }
+
+      .flex-container-feat > div {
+        font-size: 26px;
+        text-align: center;
+        width: 250px;
+      }
+
+      .flex-container-cont {
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
         margin: 10px;
       }
 
-      .flex-container1 > div {
-        text-align: start;
+      .flex-container-cont > div {
         font-size: 26px;
         text-align: center;
       }
@@ -86,7 +97,7 @@
 
       .text-size-large {
         font-size: 20px;
-        color: black;
+        color: white;
       }
 
       .row:after {
@@ -103,27 +114,35 @@
           width: 150px;
           height: 150px;
           border-radius: 0px;
-        }
+      }
 
-        .txtshdw {
-          text-shadow: 2px 2px 8px black;
-        }
+      body {
+        background-image: url(img/hero_bg_1.jpg);
+        background-size: 100% 100%;
+      }
 
-        .container1 {
-          background-color: black;
-          width: 500px;
-          height: auto;
-        }
+      .shadow {
+        text-shadow: 3px 3px 5px black;
+      }
 
-        body {
-          background-image: url(img/hero_bg_1.jpg);
-          background-size: 100% 100%;
-        }
+      .shadow-box {
+        box-shadow: 3px 3px 10px black;
+      }
+
+      .divider {
+        width: 90vw;
+        height: 2.5px;
+        margin: 0 auto 40px;
+        background: #fb8e17;
+      }
 
       /* Responsive layout */
       @media screen and (min-width: 768px) {
         button:hover {
           color: white;
+        }
+        span:hover {
+          color: #fb8e17;
         }
       }
 
@@ -133,96 +152,114 @@
             height: 50px;
             font-size: 25px;
           }
-          .flex-container1 > div {
-            width: 180px;
+          .flex-container-feat > div {
+            width: 150px;
           }
+          .flex-container-cont {
+            flex-direction: column;
+          }
+          .flex-container-cont > div {
+            text-align: start;
+          }
+          .text-size-large {
+            font-size: 15px;
+          }
+          .grid-container {
+            height: 560px;
+        }
       }
 
     </style>
     
     <!-- Fixed navbar -->
     
-    <nav class="navbar navbar-fixed-top probootstrap-navbar">
+    <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar">---</span>
-            <span class="icon-bar">---</span>
-            <span class="icon-bar">---</span>
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html" title="The Fatfox">The Fatfox</a>
+          <a class="navbar-brand" href="index.html">FatFox</a>
         </div>
-
+  
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="franchise.html">Franchise</a></li>
+            <li><a href="index.html" data-nav-section="welcome">Mission / Vission</a></li>
+            <li><a onclick="window.open ('/about.html', ''); return false" href="javascript:void(0);">About</a></li>
+            <li><a onclick="window.open ('/franchise.html', ''); return false" href="javascript:void(0);">Franchise</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section>
+    <section> 
       <div class="text-center">
         <div class="grid-container text-center">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                <h2 class="primary-heading txtshdw"><b>Build A Franchise with us</b></h2><br><br>
-                <h3 class="secondary-heading"><br>The Fatfox</h3>
+                <h2 class="primary-heading shadow"><b>Partner with us</b></h2><br><br>
+               <!-- 
+                 <h3 class="secondary-heading"><br>The <span>Fatfox</span></h3> 
+                -->
               </div>
             </div>
           </div>
         </div>
         <div class="container text-center">
-          <button class="button1" onclick="">Click Here</button>
+          <a href="https://forms.gle/Yodi5qUFZ22u1wLG6" target="_blank"><button class="button1 shadow-box">Click Here</button></a>
         </div>
       </div>
     </section>
 
+    <div class="divider"></div>
+
     <section class="probootstrap-section probootstrap-heading text-center" data-section="Mission">       
         <div>
-          <h2 class="primary-heading"><b>Mission and Vision</b></h2><br><br>
+          <h2 class="primary-heading shadow"><b>Mission and Vision</b></h2><br><br>
           <p style="text-align: center; font-size: x-large;"><br>Our <span style="color: darkorange;">Mission</span> is to deliver the best food with the ultimate customer service.<br><br>
             Our <span style="color: darkorange;">Vision</span> is to be the most favourite food chain brand in the country and world.<br><br></p>
         </div>
     </section>
 
-    <section>
-      <div class="container1"></div>
-    </section>
+    <div class="divider"></div>
 
     <section class="probootstrap-section probootstrap-heading dark text-center" data-section="Benefits"> 
-        <h1 class="primary-heading"><b>Benefits Of Joining Hands With Us</b></h1><br><br><br><br>    
-        <div class="flex-container1">
-          <div><img class="icon-img" src="img/First.png"><p style="color: white; font-size: 18px;"><br>Available All Days Of The week</p></div>
-          <div><img class="icon-img" src="img/Second.png"><p style="color: white; font-size: 18px"><br>Order Using Our App</p></div>
-          <div><img class="icon-img" src="img/Third.png"><p style="color: white; font-size: 18px"><br>Super Fast Delivery</p></div>  
-          <div><img class="icon-img" src="img/Fourth.png"><p style="color: white; font-size: 18px"><br>Food For All Types Of Cravings</p></div>
-          <div><img class="icon-img" src="img/Fifth.png"><p style="color: white; font-size: 18px"><br>We Accept Bulk Orders</p></div>
+        <h1 class="primary-heading shadow"><b>Benefits Of Joining Hands With Us</b></h1><br><br><br><br>    
+        <div class="flex-container-feat">
+          <div class="feat-textw"><img class="icon-img" src="img/First.png"><br>Available All Days Of The week</p></div>
+          <div class="feat-textw"><img class="icon-img" src="img/Second.png"><br>Order Using Our App</p></div>
+          <div class="feat-textw"><img class="icon-img" src="img/Third.png"><br>Super Fast Delivery</p></div>  
+          <div class="feat-textw"><img class="icon-img" src="img/Fourth.png"><br>Food For All Types Of Cravings</p></div>
+          <div class="feat-textw"><img class="icon-img" src="img/Fifth.png"><br>We Accept Bulk Orders</p></div>
         </div>
     </section>
 
+    <div class="divider"></div>
+
     <section class="probootstrap-section probootstrap-heading text-center" data-section="Meeting">
-      <h2 class="primary-heading"><b>Schedule a meeeting with us</b></h2><br><br>
+      <h2 class="primary-heading shadow"><b>Schedule a meeeting with us</b></h2><br><br>
       <div class="flex-container">
         <div><img style="width: 200px; height: 200px;" src="img/img_1.jpg"></img></div><br>
-        <div><button class="button1">Submit Form</button></div>
+        <div><button class="button1 shadow-box">Submit Form</button></div>
       </div>
     </section>
+
+    <div class="divider"></div>
     
     <section class="probootstrap-section">
-      <div class="flex-container1">
+      <div class="flex-container-cont">
         <div>
-          <p class="text-size-large" style="color: white;"><img src="img/logo.png" >  Company Brochure</img></p>
+          <p class="text-size-large"><img src="img/logo.png" style="border-radius: 0px; width: 65px; height: 65px;" >  Company Brochure</img></p>
         </div>
         <div>
-          <p class="text-size-large" style="color: white;"><img src="img/phone.png">  +919611124041</img></p>
-          </div>
+          <p class="text-size-large"><img src="img/phone.png">  +919611124041</img></p>
+        </div>
         <div>
-        <p class="text-size-large" style="color: white;"><img src="img/email.png">  contactus@thefatfox.in</img></p>
+          <p class="text-size-large"><img src="img/email.png">  contactus@thefatfox.in</img></p>
         </div>
       </div>
     </section>
