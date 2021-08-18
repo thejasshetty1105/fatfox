@@ -2033,6 +2033,7 @@ section[data-section="menu"] {
 .flexslider .slides > li {
   background-size: cover;
   background-repeat: none;
+  background-position: center center;
 }
 
 .flexslider .slides > li.overlay:before {
