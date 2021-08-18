@@ -5,6 +5,8 @@
  * Author URL: https://probootstrap.com
  * License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
  */
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?1z9v6x");
@@ -1138,7 +1140,7 @@ section[data-section="menu"] {
 
 @media screen and (max-width: 992px) {
   .probootstrap-cell .image {
-    height: 200px;
+    height: 65vw;
   }
 }
 
@@ -1957,8 +1959,8 @@ section[data-section="menu"] {
 }
 
 .probootstrap-heading .primary-heading {
-  font-family: "Pinyon Script", serif;
   color: #fb8e17;
+  font-family: 'Lobster', cursive;
   margin: 0;
   padding: 0;
   font-size: 80px;
@@ -1966,7 +1968,7 @@ section[data-section="menu"] {
 
 @media screen and (max-width: 768px) {
   .probootstrap-heading .primary-heading {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
 
