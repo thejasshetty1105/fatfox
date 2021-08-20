@@ -1147,6 +1147,7 @@ section[data-section="menu"] {
 .probootstrap-cell .text {
   padding: 40px;
   position: relative;
+  background-color: black;
 }
 
 .probootstrap-cell .text h3 {
@@ -1961,7 +1962,7 @@ section[data-section="menu"] {
 .probootstrap-heading .primary-heading {
   color: #fb8e17;
   font-family: 'Lobster', cursive;
-  margin: 0;
+  margin: -190px;
   padding: 0;
   font-size: 80px;
 }
@@ -1969,12 +1970,27 @@ section[data-section="menu"] {
 @media screen and (max-width: 768px) {
   .probootstrap-heading .primary-heading {
     font-size: 50px;
+	margin: 0;
   }
 }
 
-.probootstrap-heading .secondary-heading {
+.probootstrap-heading1 .primary-heading {
+  color: #fb8e17;
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .probootstrap-heading1 .primary-heading {
+    font-size: 50px;
+  }
+}
+
+.probootstrap-heading .secondary-heading, .probootstrap-heading1 .secondary-heading {
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000;
   margin: 0;
   padding: 0;
   letter-spacing: 0.05em;
@@ -1986,7 +2002,7 @@ section[data-section="menu"] {
 }
 
 @media screen and (max-width: 768px) {
-  .probootstrap-heading .secondary-heading {
+  .probootstrap-heading .secondary-heading, .probootstrap-heading1 .secondary-heading {
     font-size: 40px;
   }
 }
@@ -2434,4 +2450,8 @@ section[data-section="menu"] {
   .img-xs-responsive {
     max-width: 100%;
   }
+}
+
+.lob {
+	font-family: 'Lobster', cursive;
 }
