@@ -44,7 +44,7 @@
       flex-wrap: nowrap;
       align-content: center;
       justify-content: space-around;
-      margin: 18px;
+      margin: 80px 0 0 0;
     }
 
     .flex-container-feat > div {
@@ -96,20 +96,32 @@
       background-color: black;
     }
 
+    .button-order {
+      color: #fb8e17;
+      width: 360px;
+      border-radius: 25px;
+      background-color: transparent;
+      border-style: dotted;
+    }
+
     .button2 {
       color: black;
       width: 150px;
       border-radius: 25px;
-      background-color: darkorange;
+      background-color: #fb8e17;
     }
 
     .colr {
-      color: darkorange;
+      color: #fb8e17;
     }
 
-    button:hover {
+    .button1:hover {
       color: white;
       height: 40px;
+    }
+
+    .button-order:hover {
+      background-color: black;
     }
 
     .icon-img {
@@ -120,19 +132,22 @@
 
     .ex1 {
       background-image: url(img/desk_banner.jpg);
-      background-size: 100% 100%;
+      background-position: center center;
     }
 
     .ex2 {
-      background-image: url(img/hero_bg_2.jpg)
+      background-image: url(img/hero_bg_2.jpg);
+      background-position: center center;
     }
 
     .ex3 {
       background-image: url(img/hero_bg_3.jpg);
+      background-position: center center;
     }
 
     .ex4 {
       background-image: url(img/hero_bg_4.jpg);
+      background-position: center center;
     }
 
     #white {
@@ -145,7 +160,7 @@
 
     /* Responsive layout */
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 786px) {
       .flex-container-feat {
         flex-wrap: wrap;
       }
@@ -160,6 +175,10 @@
       }
       .ex3 {
         background-image: url(img/2nd_banner.jpg);
+      }
+      .button-order {
+        width: 300px;
+        background-color: black;
       }
     }
     
@@ -196,7 +215,7 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                <h1 class="primary-heading">Order Now!</h1>
+                <h1 class="primary-heading"><button class="button-order">Order Now</button></h1>
               </div>
             </div>
           </div>
@@ -249,13 +268,12 @@
         <p class="sub-heading" style="color: black;font-size: 18px;"><br><br>We Accept Bulk Orders</p>
       </div>
     </div>
-  </section>
 
   <section class="probootstrap-section-bg ex1" data-section="specialties">
-    <div class="">
+    <div>
       <div class="row">
-        <div class="col-md-12 text-center probootstrap-animate">
-          </div>
+        <div class="col-md-12 text-center probootstrap-animate probootstrap-heading1">
+          <h1 class="primary-heading">Our Specialties</h1>
         </div>
       </div>
     </div>
@@ -385,12 +403,12 @@
       <div class="row">
         <div class="col-md-6 probootstrap-animate">
           <div class="probootstrap-footer-widget">
-            <h3>Locations</h3>
+            <h2 class="colr"><b>Locations</b></h2>
             <div class="row">
-              <div class="col-sm-4 col-md-6">
+              <div class="col-md-6">
                 <p> 198 West 21th Street, Suite 721 <br> New York NY 10016</p>
               </div>
-              <div class="col-sm-4 col-md-6">
+              <div class="col-md-6">
                 <p> 198 West 21th Street, Suite 721 <br> New York NY 10016</p>
               </div>
             </div>
@@ -398,10 +416,10 @@
         </div>
         <div class="col-md-6 probootstrap-animate">
           <div class="probootstrap-footer-widget">
-            <h3>Open Hours</h3>
+            <h2 class="colr"><b>Open Hours</b></h2>
             <div class="row">
               <div class="col-md-4">
-                <p>Monday - Thursday <br> 5:30pm - 10:00pm</p>
+                <p class="">Monday - Thursday <br> 5:30pm - 10:00pm</p>
               </div>
               <div class="col-md-4">
                 <p>Friday - Sunday <br> 5:30pm - 10:00pm</p>

@@ -80,6 +80,10 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
 
+      .black {
+        background-color: black;
+      }
+
       .button1 {
         color: black;  
         border-radius: 25px; 
@@ -131,10 +135,13 @@
       }
 
       .divider {
-        width: 90vw;
         height: 2.5px;
-        margin: 0 auto 40px;
+        margin: 0 auto 0px;
         background: #fb8e17;
+      }
+
+      #white {
+        color: white;
       }
 
       /* Responsive layout */
@@ -188,15 +195,15 @@
   
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html" data-nav-section="welcome">Mission / Vission</a></li>
-            <li><a onclick="window.open ('/about.html', ''); return false" href="javascript:void(0);">About</a></li>
-            <li><a onclick="window.open ('/franchise.html', ''); return false" href="javascript:void(0);">Franchise</a></li>
+            <li><a id="white" href="#" data-nav-section="Mission">Mission</a></li>
+            <li><a id="white" href="#" data-nav-section="Benefits">Benefits</a></li>
+            <li><a id="white" href="#" data-nav-section="Meeting">Meeting</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <section> 
+    <section class="black"> 
       <div class="text-center">
         <div class="grid-container text-center">
           <div class="row">
@@ -228,7 +235,7 @@
 
     <div class="divider"></div>
 
-    <section class="probootstrap-section probootstrap-heading dark text-center" data-section="Benefits"> 
+    <section class="probootstrap-section probootstrap-heading dark text-center black" data-section="Benefits"> 
         <h1 class="primary-heading shadow"><b>Benefits Of Joining Hands With Us</b></h1><br><br><br><br>    
         <div class="flex-container-feat">
           <div class="feat-textw"><img class="icon-img" src="img/First.png"><br>Available All Days Of The week</p></div>
@@ -251,7 +258,7 @@
 
     <div class="divider"></div>
     
-    <section class="probootstrap-section">
+    <section class="probootstrap-section black">
       <div class="flex-container-cont">
         <div>
           <p class="text-size-large"><img src="img/logo.png" style="border-radius: 0px; width: 65px; height: 65px;" >  Company Brochure</img></p>

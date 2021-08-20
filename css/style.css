@@ -796,7 +796,7 @@ section[data-section="menu"] {
   background-repeat: no-repeat;
   padding: 7em 0;
   position: relative;
-  height: 600px;
+  height: 800px;
 }
 
 @media screen and (max-width: 768px) {
