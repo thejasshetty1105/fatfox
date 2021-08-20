@@ -11,7 +11,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
   <link rel="stylesheet" href="css/styles-merged.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -101,6 +101,7 @@
       width: 360px;
       border-radius: 25px;
       background-color: transparent;
+      border-style: none;
     }
 
     .button2 {
@@ -153,19 +154,16 @@
       background-color: black;
     }
 
-    
-    /*#overlay {
-      position: fixed;
-      display: block;
+    #overlay {
+      position: relative;
+      display: flex;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.5);
-      z-index: 2;
-      cursor: pointer;
+      background-image: url(img/web\ landscape\ 2.jpg);
+      color: #fff;
+      flex-direction: column;
     }
 
     #text{
@@ -176,15 +174,15 @@
       color: #fb8e17;
       transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
-    } */
+    }
+
+    .shadow {
+      text-shadow: 3px 3px 5px black;
+    }
 
     .shadow-box {
       box-shadow: 5px 5px 5px black;
     }
-
-    /*body {
-      background-image: url(img/hero_bg_1.jpg);
-    }*/
 
     /* Responsive layout */
 
@@ -236,49 +234,41 @@
   </nav>
 
   <section class="flexslider" data-section="welcome">
-    <ul class="slides">
-        <li class="ex1">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                  <h1 class="primary-heading"><button class="button-order box-shadow">Order Now</button></h1>
-                </div>
-              </div>
+    <div id="overlay" class="slides">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div id="text" class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                
             </div>
           </div>
-        </li>
-    </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="text" class="primary-heading shadow"><button class="button-order">Order Now</button></h1>
   </section>
 
   <section class="probootstrap-section probootstrap-heading1 text-center">
     <h2 class="primary-heading">Features</h2>
     <div class="flex-container-feat">
-      <div><img src="img/Fifth.png" class='icon-img'>
+      <div><img src="img/icon 1 b.png" class='icon-img'>
         <p class="sub-heading" style="color: black;font-size: 18px;"><br><br>Available All Days Of The week</p>
       </div>
-      <div><img src="img/Fifth.png" class='icon-img'>
+      <div><img src="img/icon 2 b.png" class='icon-img'>
         <p class="sub-heading" style="color: black;font-size: 18px;"><br><br>Order Using Our App</p>
       </div>
-      <div><img src="img/Fifth.png" class='icon-img'>
+      <div><img src="img/icon 3 b.png" class='icon-img'>
         <p class="sub-heading" style="color: black;font-size: 18px;"><br><br>Super Fast Delivery</p>
       </div>
-      <div><img src="img/Fifth.png" class='icon-img'>
+      <div><img src="img/icon 4 b.png" class='icon-img'>
         <p class="sub-heading" style="color: black;font-size: 18px;"><br><br>Food For All Types Of Cravings</p>
       </div>
-      <div><img src="img/Fifth.png" class='icon-img'>
+      <div><img src="img/icon 5 b.png" class='icon-img'>
         <p class="sub-heading" style="color: black;font-size: 18px;"><br><br>We Accept Bulk Orders</p>
       </div>
     </div>
 
   <section class="probootstrap-section-bg ex2" data-section="specialties">
-    <div>
-      <div class="row">
-        <div class="col-md-12 text-center probootstrap-animate probootstrap-heading1">
-          <h1 class="primary-heading">Our Specialties</h1>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- probootstrap-bg-white -->
@@ -292,7 +282,7 @@
             <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
               <div class="image" style="background-image: url(img/burgers.jpg);"></div>
               <div class="text text-center">
-                <h3 class="colr">BURGERS</h3>
+                <h3>BURGERS</h3>
                 <p>Looking for a no-frills meal? One burger should do the trick, but we’d recommend you try two!</p>
               </div>
             </div>
@@ -307,7 +297,7 @@
               <div class="image" style="background-image: url(img/moms.jpg);"></div>
               <div class="text text-center">
                 <h3>MOMOS</h3>
-                <p>Bringing in the flavours of the Oriental North to your homes</p>
+                <p>Bringing in the flavours of the Oriental North to your homes uijjnij</p>
               </div>
             </div>
 
@@ -325,7 +315,7 @@
               <div class="image" style="background-image: url(img/starter.jpg);"></div>
               <div class="text text-center">
                 <h3>STARTERS</h3>
-                <p>Max taste, max quantity without burning a hole in your pocket, what more can you ask for?</p>
+                <p>Max taste, max quantity without burning a hole in your pocket, what more can you</p>
               </div>
             </div>
             <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">

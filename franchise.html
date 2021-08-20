@@ -51,7 +51,6 @@
         flex-wrap: wrap;
         align-content: center;
         justify-content: space-around;
-        margin: 18px;
       }
 
       .flex-container-feat > div {
@@ -64,12 +63,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin: 10px;
       }
 
       .flex-container-cont > div {
         font-size: 26px;
         text-align: center;
+        margin-top: 20px;
       }
 
       * {
@@ -77,7 +76,7 @@
       }
 
       body {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'SFNSText Regular', cursive;
       }
 
       .black {
@@ -87,7 +86,7 @@
       .button1 {
         color: black;  
         border-radius: 25px; 
-        background-color: darkorange;
+        background-color: #fb8e17;
         width: 330px;
         height: 55px;
         text-align: center;
@@ -96,7 +95,7 @@
       }
 
       .colr {
-        color: darkorange;
+        color: #fb8e17;
         text-align: center;
       }
 
@@ -150,6 +149,15 @@
         background-position: center center;
       }
 
+      .mission-text {
+        color: #fff;
+        text-align: justify; 
+        font-size: 15px;
+        line-height: 1.5;
+        width: 90%; 
+        margin: auto;
+      }
+
       /* Responsive layout */
       @media screen and (min-width: 768px) {
         button:hover {
@@ -162,12 +170,13 @@
 
       @media screen and (max-width: 768px) {
         .button1{
-            width: 200px;
-            height: 50px;
-            font-size: 25px;
+            width: 150px;
+            height: 30px;
+            font-size: 18px;
           }
           .flex-container-feat > div {
             width: 150px;
+            font-size: 15px;
           }
           .flex-container-cont {
             flex-direction: column;
@@ -194,19 +203,19 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only"></span>
+            <span class="sr-only">T</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">FatFox</a>
+          <a class="navbar-brand">FineOak</a>
         </div>
   
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a id="white" href="#" data-nav-section="Mission">Mission</a></li>
-            <li><a id="white" href="#" data-nav-section="Benefits">Benefits</a></li>
-            <li><a id="white" href="#" data-nav-section="Meeting">Meeting</a></li>
+            <li class="active"><a id="white" href="index.html" data-nav-section="welcome">Home</a></li>
+            <li><a id="white" onclick="window.open ('/about.html', ''); return false" href="javascript:void(0);">About</a></li>
+            <li><a id="white" onclick="window.open ('/franchise.html', ''); return false" href="javascript:void(0);">Franchise</a></li>
           </ul>
         </div>
       </div>
@@ -237,8 +246,8 @@
     <section class="probootstrap-section probootstrap-heading text-center" data-section="Mission">       
         <div>
           <h2 class="primary-heading shadow"><b>Mission and Vision</b></h2><br><br>
-          <p style="text-align: center; font-size: 20px;line-height: 1.5;width: 90%; margin: auto;"><br>Our <span style="color: darkorange;">Mission</span> is to be the most preferred fast-food brand across Karnataka in the next couple of years,<br>and across India in the next 10 years.<br><br>
-            Our <span style="color: darkorange;">Vision</span> is to deliver excellence by constantly innovating and upgrading ourselves,<br>so as to provide customers with freshly prepared food and beverages<br>that satiates their hunger without spending excessively.<br><br></p>
+          <p class="mission-text"><br><span style="color: darkorange; font-size: 17px;"><b>Mission</b></span> is to be the most preferred fast-food brand across Karnataka in the next couple of years, and across India in the next 10 years.<br><br>
+            <span style="color: darkorange; font-size: 17px;"><b>Vision</b></span> is to deliver excellence by constantly innovating and upgrading ourselves, so as to provide customers with freshly prepared food and beverages that satiates their hunger without spending excessively.<br><br></p>
         </div>
     </section>
 
