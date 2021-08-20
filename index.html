@@ -101,7 +101,6 @@
       width: 360px;
       border-radius: 25px;
       background-color: transparent;
-      border-style: dotted;
     }
 
     .button2 {
@@ -120,10 +119,6 @@
       height: 40px;
     }
 
-    .button-order:hover {
-      background-color: black;
-    }
-
     .icon-img {
       width: 60%;
       height: 50%;
@@ -131,12 +126,12 @@
     }
 
     .ex1 {
-      background-image: url(img/desk_banner.jpg);
+      background-image: url(img/web\ landscape\ 2.jpg);
       background-position: center center;
     }
 
     .ex2 {
-      background-image: url(img/hero_bg_2.jpg);
+      background-image: url(img/desk_banner.jpg);
       background-position: center center;
     }
 
@@ -154,6 +149,39 @@
       color: white;
     }
 
+    .black {
+      background-color: black;
+    }
+
+    
+    /*#overlay {
+      position: fixed;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    #text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 50px;
+      color: #fb8e17;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+    } */
+
+    .shadow-box {
+      box-shadow: 5px 5px 5px black;
+    }
+
     /*body {
       background-image: url(img/hero_bg_1.jpg);
     }*/
@@ -168,17 +196,16 @@
         width: 150px;
       }
       .ex1 {
-        background-image: url(img/mobile_banner.jpg);
+        background-image: url(img/web\ image\ 3\ .jpg);
       }
       .ex2 {
-        background-image: url(img/banner2.jpg);
+        background-image: url(img/mobile_banner.jpg);
       }
       .ex3 {
         background-image: url(img/2nd_banner.jpg);
       }
       .button-order {
         width: 300px;
-        background-color: black;
       }
     }
     
@@ -201,7 +228,7 @@
       <div id="navbar-collapse" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a id="white" href="index.html" data-nav-section="welcome">Home</a></li>
-          <li><a id="white" onclick="window.open ('/about.html', ''); return false" href="javascript:void(0);">About</a></a></li>
+          <li><a id="white" onclick="window.open ('/about.html', ''); return false" href="javascript:void(0);">About</a></li>
           <li><a id="white" onclick="window.open ('/franchise.html', ''); return false" href="javascript:void(0);">Franchise</a></li>
         </ul>
       </div>
@@ -210,42 +237,17 @@
 
   <section class="flexslider" data-section="welcome">
     <ul class="slides">
-      <li class="ex1">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                <h1 class="primary-heading"><button class="button-order">Order Now</button></h1>
+        <li class="ex1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                  <h1 class="primary-heading"><button class="button-order box-shadow">Order Now</button></h1>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </li>
-      
-      <li class="ex2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                <h1 class=></h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-
-      <li class="ex3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                <h1></h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-
+        </li>
     </ul>
   </section>
 
@@ -269,7 +271,7 @@
       </div>
     </div>
 
-  <section class="probootstrap-section-bg ex1" data-section="specialties">
+  <section class="probootstrap-section-bg ex2" data-section="specialties">
     <div>
       <div class="row">
         <div class="col-md-12 text-center probootstrap-animate probootstrap-heading1">
@@ -281,7 +283,7 @@
 
   <!-- probootstrap-bg-white -->
   
-  <section class="probootstrap-section overlay">
+  <section class="probootstrap-section overlay black">
     <div class="container">
       <div class="row">
         <div class="probootstrap-cell-retro">
@@ -290,22 +292,22 @@
             <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
               <div class="image" style="background-image: url(img/burgers.jpg);"></div>
               <div class="text text-center">
-                <h3>BURGERS</h3>
-                <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                <h3 class="colr">BURGERS</h3>
+                <p>Looking for a no-frills meal? One burger should do the trick, but we’d recommend you try two!</p>
               </div>
             </div>
             <div class="probootstrap-cell reverse probootstrap-animate" data-animate-effect="fadeIn">
               <div class="image" style="background-image: url(img/pasta.jpg);"></div>
               <div class="text text-center">
                 <h3>PASTA</h3>
-                <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                <p>Need a filling Conti meal that’s not messy? Pasta to the rescue!</p>
               </div>
             </div>
             <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
               <div class="image" style="background-image: url(img/moms.jpg);"></div>
               <div class="text text-center">
                 <h3>MOMOS</h3>
-                <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                <p>Bringing in the flavours of the Oriental North to your homes</p>
               </div>
             </div>
 
@@ -323,7 +325,7 @@
               <div class="image" style="background-image: url(img/starter.jpg);"></div>
               <div class="text text-center">
                 <h3>STARTERS</h3>
-                <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                <p>Max taste, max quantity without burning a hole in your pocket, what more can you ask for?</p>
               </div>
             </div>
             <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
@@ -363,7 +365,7 @@
         <div class="col-md-5 text-center probootstrap-animate">
           <div class="probootstrap-heading1 dark">
             <h1 class="primary-heading">Contact</h1>
-            <h3 class="lob">Let's Chat</h3>
+            <h2 class="SFNS">Let's Chat</h2>
           </div>
           <p>Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est molestiae enim a voluptate totam natus
             modi debitis dicta impedit voluptatum quod sapiente illo saepe explicabo quisquam perferendis labore et

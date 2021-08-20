@@ -5,7 +5,14 @@
  * Author URL: https://probootstrap.com
  * License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
  */
- @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+ @font-face {
+	font-family: 'SFNSText Bold';
+	src: url('./Resolve-BoldIta.otf') format('woff');
+}
+@font-face {
+	font-family: 'SFNSText Regular';
+	src: url('./SFNSText-Light.otf');		
+}
 
 @font-face {
   font-family: "icomoon";
@@ -765,7 +772,7 @@ section[data-section="menu"] {
 }
 
 .probootstrap-section {
-  padding: 7em 0;
+  padding-top: 7em;
 }
 
 .probootstrap-section.probootstrap-border-top {
@@ -787,7 +794,7 @@ section[data-section="menu"] {
 
 @media screen and (max-width: 768px) {
   .probootstrap-section {
-    padding: 3em 0;
+    padding-top: 3em;
   }
 }
 
@@ -894,7 +901,7 @@ section[data-section="menu"] {
 
 @media screen and (max-width: 768px) {
   .probootstrap-footer-social.right {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -1423,6 +1430,7 @@ section[data-section="menu"] {
 
 .probootstrap-form {
   margin-bottom: 50px;
+  text-align: left;
 }
 
 .probootstrap-form label {
@@ -1788,7 +1796,7 @@ section[data-section="menu"] {
 }
 
 .probootstrap-flex-section {
-  padding: 7em 0;
+  padding-top: 7em;
 }
 
 .probootstrap-flex-section.probootstrap-bg-white {
@@ -1961,8 +1969,8 @@ section[data-section="menu"] {
 
 .probootstrap-heading .primary-heading {
   color: #fb8e17;
-  font-family: 'Lobster', cursive;
-  margin: -190px;
+  font-family: 'SFNSText Bold';
+  margin: 0;
   padding: 0;
   font-size: 80px;
 }
@@ -1970,13 +1978,13 @@ section[data-section="menu"] {
 @media screen and (max-width: 768px) {
   .probootstrap-heading .primary-heading {
     font-size: 50px;
-	margin: 0;
+	  margin: 300px auto;
   }
 }
 
 .probootstrap-heading1 .primary-heading {
   color: #fb8e17;
-  font-family: 'Lobster', cursive;
+  font-family: 'SFNSText Bold';
   margin: 0;
   padding: 0;
   font-size: 80px;
@@ -2452,6 +2460,6 @@ section[data-section="menu"] {
   }
 }
 
-.lob {
-	font-family: 'Lobster', cursive;
+.SFNS {
+  font-family: 'SFNSText Bold';
 }
