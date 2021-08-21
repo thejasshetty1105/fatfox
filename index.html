@@ -41,13 +41,13 @@
     .flex-container-feat {
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-content: center;
       justify-content: space-around;
     }
 
     .flex-container-feat > div {
-      font-size: 26px;
+      font-size: 17px;
       text-align: center;
       width: 250px;
     }
@@ -96,11 +96,21 @@
     }
 
     .button-order {
+      position: relative;
       color: #fb8e17;
       width: 360px;
       border-radius: 25px;
       background-color: transparent;
       border-style: none;
+      font-family: 'SFNSText Bold';
+      border: 1px solid white;
+      letter-spacing: 3px;
+      transition: 0.5s ease-in-out;
+    }
+
+    .button-order:hover {
+      background-color: rgb(0, 0, 0, 0.9);
+      transform: translateY();
     }
 
     .button2 {
@@ -120,7 +130,7 @@
     }
 
     .icon-img {
-      width: 70%;
+      width: 60%;
       height: 60%;
     }
 
@@ -172,9 +182,13 @@
       box-shadow: 5px 5px 5px black;
     }
 
+    body {
+      height: 100vh;
+    }
+
     /* Responsive layout */
 
-    @media screen and (max-width: 786px) {
+    @media screen and (max-width: 767px) {
       .flex-container-feat {
         flex-wrap: wrap;
       }
@@ -190,6 +204,9 @@
       }
       .button-order {
         width: 300px;
+      }
+      .icon-img {
+        height: 50%;
       }
     }
     
@@ -225,7 +242,7 @@
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <div id="text" class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
-                
+              </div>
             </div>
           </div>
         </div>
@@ -234,8 +251,8 @@
     <h1 id="text" class="primary-heading shadow"><button class="button-order">Order Now</button></h1>
   </section>
 
-  <section class="probootstrap-section probootstrap-heading1 text-center">
-    <h2 class="primary-heading">Features<br><br></h2>
+  <section class="probootstrap-section-feat probootstrap-heading1 text-center" style="height: 90vh;">
+    <h2 class="primary-heading" style="margin-bottom: 5%;">Features<br></h2>
     <div class="flex-container-feat">
       <div><img src="img/icon 1 b.png" class='icon-img'>
         <p class="sub-heading" style="color: black;font-size: 18px;"><br>Available All Days Of The week</p>
@@ -253,13 +270,14 @@
         <p class="sub-heading" style="color: black;font-size: 18px;"><br>We Accept Bulk Orders</p>
       </div>
     </div>
+    </section>
 
   <section class="probootstrap-section-bg ex2" data-section="specialties">
   </section>
 
   <!-- probootstrap-bg-white -->
   
-  <section class="probootstrap-section overlay black">
+  <section class="probootstrap-section overlay black" style="">
     <div class="container">
       <div class="row">
         <div class="probootstrap-cell-retro">
@@ -283,7 +301,7 @@
               <div class="image" style="background-image: url(img/moms.jpg);"></div>
               <div class="text text-center">
                 <h3>MOMOS</h3>
-                <p>Bringing in the flavours of the Oriental North to your homes uijjnij</p>
+                <p>Authentic momos, always prepared fresh from scratch</p>
               </div>
             </div>
 
@@ -308,7 +326,7 @@
               <div class="image" style="background-image: url(img/pizza.jpg);"></div>
               <div class="text text-center">
                 <h3>PIZZA</h3>
-                <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque</p>
+                <p>Straight from the ovens of Italy to your homes</p>
               </div>
             </div>
 
@@ -340,7 +358,7 @@
       <div class="row">
         <div class="col-md-5 text-center probootstrap-animate">
           <div class="probootstrap-heading1 dark">
-            <h1 class="primary-heading">Contact</h1>
+            <h1 class="primary-heading">CONTACT</h1>
             <h2 class="SFNS">Let's Chat</h2>
           </div>
           <p>Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est molestiae enim a voluptate totam natus

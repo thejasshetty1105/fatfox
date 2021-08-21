@@ -775,6 +775,18 @@ section[data-section="menu"] {
   padding-top: 7em;
 }
 
+.probootstrap-section-feat {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+@media screen and (max-width: 769px) {
+  .probootstrap-section-feat {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+
 .probootstrap-section.probootstrap-border-top {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -1161,7 +1173,8 @@ section[data-section="menu"] {
   margin: 0 0 10px 0;
   font-size: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: #fb8e17;
+  font-weight: bold;
 }
 
 .probootstrap-cell .text p:last-child {

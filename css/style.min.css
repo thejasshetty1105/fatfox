@@ -94,6 +94,11 @@ a:hover {
   text-decoration: none;
 }
 
+section {
+  height: 100vh !important;
+  scroll-snap-align: start;
+}
+
 .hero-text-heading,
 .probootstrap-hero h1 {
   font-size: 52px;
@@ -1882,16 +1887,16 @@ section[data-section="menu"] {
 .probootstrap-heading .primary-heading-partner {
   font-family: 'SFNSText Bold', cursive;
   color: #fb8e17;
-  margin-right: 70%;
+  margin: 25% 0;
   padding: 0;
-  font-size: 80px;
-  letter-spacing: 3px;
+  font-size: 60px;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 768px) {
   .probootstrap-heading .primary-heading-partner {
     font-size: 33px;
-    margin:0;
+    margin:-50px 0;
   }
 }
 
@@ -1900,7 +1905,7 @@ section[data-section="menu"] {
   color: #fb8e17;
   margin: 0;
   padding: 0;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 @media screen and (max-width: 768px) {
