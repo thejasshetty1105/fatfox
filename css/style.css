@@ -860,6 +860,7 @@ section[data-section="menu"] {
 
 .probootstrap-footer h3 {
   font-size: 18px;
+  font-weight: bold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #ffffff;
@@ -2000,12 +2001,12 @@ section[data-section="menu"] {
   font-family: 'SFNSText Bold';
   margin: 0;
   padding: 0;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 @media screen and (max-width: 768px) {
   .probootstrap-heading1 .primary-heading {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 

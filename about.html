@@ -87,12 +87,6 @@
       .colr , .colr1 {
         color: darkorange;
       }
-
-      button:hover {
-        color: white;
-        width: 200px;
-        height: 40px;
-      }
       .about-text{
         margin-top: 70px;
         line-height: 35px;
@@ -102,6 +96,14 @@
       .location-del{
         margin-top: 8px;
         font-size: 25px;
+      }
+      .background {
+        background-image: url(img/web\ landscape\ 3.jpg);
+        background-size: cover;
+        background-position: center center;
+      }
+      #white {
+        color: white;
       }
 
       /* Responsive layout */
@@ -119,8 +121,12 @@
         font-size: 20px;
         margin-bottom: 0;
       }
-      
-
+      .probootstrap-section {
+        padding-top: 0em;
+      }
+      .background {
+        background-image: url(img/web\ image\ 2\ .jpg);
+      }
       }
     </style>
     
@@ -130,19 +136,19 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">T</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html" title="The Fatfox">The Fatfox</a>
+          <a class="navbar-brand">FineOak</a>
         </div>
-
+  
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="franchise.html">Franchise</a></li>
+            <li class="active"><a id="white" href="index.html" data-nav-section="welcome">Home</a></li>
+            <li><a id="white" onclick="window.open ('/about.html', ''); return false" href="javascript:void(0);">About</a></li>
+            <li><a id="white" onclick="window.open ('/franchise.html', ''); return false" href="javascript:void(0);">Franchise</a></li>
           </ul>
         </div>
       </div>
@@ -150,9 +156,7 @@
 
     <section class="flexslider" data-section="welcome">
       <ul class="slides">
-        <li style="background-image: url(img/web\ landscape\ 3.jpg)" class="overlay" data-stellar-background-ratio="0.5">
-
-          </div>
+        <li class="overlay background" data-stellar-background-ratio="0.5">
         </li>
 
       </ul>
@@ -163,7 +167,7 @@
         <div class="container">
           <div class="row"><br/>
             <div class="col-md-5 text-center probootstrap-animate">
-              <p class="about-text">Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est molestiae enim a voluptate totam natus modi debitis dicta impedit voluptatum quod sapiente illo saepe explicabo quisquam perferendis labore et illum suscipit</p>
+              <p class="about-text">In the quest of making fast food fast, kitchens forget the main reason why people order food in the first place: To satiate their tastebuds and tummies. At Fatfox, we believe these are two sides of a coin - Inseparable.</p>
             </div>
             <div class="col-md-6 col-md-push-1 probootstrap-animate">
               <p><img src="img/img_1.jpg" alt="The Fatfox" class="img-responsive"></p>
@@ -173,7 +177,7 @@
           </div>
             <div class="col-md-6 text-center probootstrap-animate">
               
-              <p class="about-text">Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est molestiae enim a voluptate totam natus modi debitis dicta impedit voluptatum quod sapiente illo saepe explicabo quisquam perferendis labore et illum suscipit. Sanimi est molestiae enim a voluptate totam natus modi debitis dicta impedit voluptatum quod sapiente.</p>
+              <p class="about-text">We get your choicest foods on your plates at lightning speeds, with zero compromises on quality, hygiene, or taste. Oh, and did we mention it won't burn a hole in your wallets? Yay!</p>
             </div>
             
           <!-- END row -->

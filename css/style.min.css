@@ -94,7 +94,7 @@ a:hover {
   text-decoration: none;
 }
 
-section {
+.section1 {
   height: 100vh !important;
   scroll-snap-align: start;
 }
@@ -802,7 +802,14 @@ section[data-section="menu"] {
     padding: 3em 0;
     height: 300px;
   }
+  .probootstrap-footer{
+    text-align: center;
+  }
+  .probootstrap-footer-social{
+    display: flex;
+    justify-content: center;
 
+  }
   .probootstrap-section-bg .probootstrap-heading {
     margin-top: 50px;
   }
@@ -816,6 +823,7 @@ section[data-section="menu"] {
 
 .probootstrap-footer h3 {
   font-size: 18px;
+  font-weight: bold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #fff;
