@@ -90,8 +90,9 @@
         width: 330px;
         height: 55px;
         text-align: center;
+        font-family: 'SFNSText Bold', cursive;
         font-size: 20px;
-        margin-bottom: 50px;
+        font-weight: bold;
       }
 
       .colr {
@@ -199,6 +200,10 @@
         background-size: cover;
       }
 
+      #text {
+        font-size: 60px;
+      }
+
       /* Responsive layout */
       @media screen and (min-width: 768px) {
         button:hover {
@@ -214,23 +219,23 @@
             width: 150px;
             height: 30px;
             font-size: 18px;
-          }
-          .flex-container-feat > div {
-            width: 150px;
-            font-size: 15px;
-          }
-          .flex-container-cont {
-            flex-direction: column;
-            margin-left: 2%;
-          }
-          .flex-container-cont > div {
-            text-align: start;
-          }
-          .text-size-large {
-            font-size: 15px;
-          }
-          .grid-container {
-            height: 560px;
+        }
+        .flex-container-feat > div {
+          width: 150px;
+          font-size: 15px;
+        }
+        .flex-container-cont {
+          flex-direction: column;
+          margin-left: 2%;
+        }
+        .flex-container-cont > div {
+          text-align: start;
+        }
+        .text-size-large {
+          font-size: 15px;
+        }
+        .grid-container {
+          height: 560px;
         }
         .ex1 {
           background-image: url(img/web\ image\ 4\ .jpg);
@@ -248,17 +253,20 @@
         .ex4 {
           background-image: url(img/meeting-mob.jpg);
         }
-        /* section {
-          position: relative;
+        #text {
+          font-size: 40px;
         }
-        section .footer{
-          position: absolute;
-          bottom: 0;
-          left: 50vw;
-          transform: translateX(-50%);
-          width: 100%;
-          margin-bottom: 2%;
-        } */
+          /* section {
+            position: relative;
+          }
+          section .footer{
+            position: absolute;
+            bottom: 0;
+            left: 50vw;
+            transform: translateX(-50%);
+            width: 100%;
+            margin-bottom: 2%;
+          } */
       }
     </style>
     
@@ -278,7 +286,7 @@
   
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a id="white" href="index.html" data-nav-section="welcome">Home</a></li>
+            <li class="active"><a id="white" onclick="window.open ('index.html', '_self')" href="javascript:void(0);">Home</a></li>
             <li><a id="white" onclick="window.open ('/about.html', ''); return false" href="javascript:void(0);">About</a></li>
             <li><a id="white" onclick="window.open ('/franchise.html', ''); return false" href="javascript:void(0);">Franchise</a></li>
           </ul>
@@ -287,7 +295,7 @@
     </nav>
     <main>
     <section class="section1 ex1"> 
-      <div class="text-center">
+      <div id="overlay">
         <div class="grid-container text-center">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -297,10 +305,10 @@
             </div>
           </div>
         </div>
+      </div>
         <!-- <div class="container text-center">
           <a href="https://forms.gle/Yodi5qUFZ22u1wLG6" target="_blank"><button class="button1 shadow-box">Click Here</button></a>
         </div> -->
-      </div>
     </section>
 
     <div class="divider"></div>
@@ -329,11 +337,14 @@
 
     <div class="divider"></div>
 
-    <section class="section1 probootstrap-section probootstrap-heading text-center meeting ex4" data-section="Meeting">
-      <h2 class="primary-heading shadow"><b>Schedule a meeeting with us</b></h2><br><br>
-      <div class="flex-container">
-        <div><img></img></div><br>
-        <div><button class="button1 shadow-box">Submit Form</button></div>
+    <section class="section1 probootstrap-heading text-center meeting ex4" data-section="Meeting">
+      <div id="overlay">
+        <div id="text">
+          <h2 class="primary-heading shadow"><b>Schedule a meeeting with us</b></h2><br><br>
+        </div>
+        <div id="text">
+          <a href="https://forms.gle/Yodi5qUFZ22u1wLG6" target="_blank"><button class="button1 shadow-box">Submit Form</button></a>
+        </div>
       </div>
     </section>
 

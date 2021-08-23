@@ -147,7 +147,7 @@
   
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a id="white" href="index.html" data-nav-section="welcome">Home</a></li>
+            <li class="active"><a id="white" onclick="window.open ('index.html', '_self')" href="javascript:void(0);">Home</a></li>
             <li><a id="white" onclick="window.open ('/about.html', ''); return false" href="javascript:void(0);">About</a></li>
             <li><a id="white" onclick="window.open ('/franchise.html', ''); return false" href="javascript:void(0);">Franchise</a></li>
           </ul>
@@ -157,9 +157,14 @@
 
     <section class="flexslider" data-section="welcome">
       <ul class="slides">
-        <li class="overlay background" data-stellar-background-ratio="0">
+        <li class="overlay background probootstrap-heading" data-stellar-background-ratio="0">
+          <div id="overlay">
+                  <div id="text" class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading" data-stellar-background-ratio="1.0">
+                    <h1 class="primary-heading shadow">Facts about Fatfox you would love to know</h1>
+                  </div>
+          </div>
+        </div>
         </li>
-
       </ul>
     </section>
 

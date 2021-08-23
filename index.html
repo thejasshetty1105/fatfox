@@ -88,12 +88,12 @@
       width: 65%;
     }
 
-    .button1 {
+    /* .button1 {
       color: darkorange;
       width: 150px;
       border-radius: 25px;
       background-color: black;
-    }
+    } */
 
     .button-order {
       position: relative;
@@ -122,12 +122,13 @@
 
     .colr {
       color: #fb8e17;
+      font-size: 40px;
     }
 
-    .button1:hover {
+    /* .button1:hover {
       color: white;
       height: 40px;
-    }
+    } */
 
     .icon-img {
       width: 60%;
@@ -156,6 +157,7 @@
     #overlay {
       position: relative;
       display: flex;
+      background-color: rgb(0, 0, 0, 0.5);
       width: 100%;
       height: 100%;
       top: 0;
@@ -165,25 +167,21 @@
     }
 
     #text{
-      position: absolute;
+      /* position: absolute; 
       top: 50%;
-      left: 50%;
-      font-size: 50px;
+      left: 50%; */
+      font-size: 60px;
       color: #fb8e17;
-      transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-    }
-
-    .shadow {
-      text-shadow: 3px 3px 5px black;
-    }
-
-    .shadow-box {
-      box-shadow: 5px 5px 5px black;
+      /* transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%); */
     }
 
     body {
       height: 100vh;
+    }
+
+    .underline {
+      text-decoration: underline;
     }
 
     /* Responsive layout */
@@ -211,6 +209,12 @@
       .button-order {
         background-color:rgb(0, 0, 0, 0.8);
       }
+      #text {
+        font-size: 35px;
+      }
+      .colr {
+        font-size: 30px;
+      }
     }
     
   </style>
@@ -226,32 +230,34 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand">FineOak</a>
+        <a class="navbar-brand" href="index.html">FineOak</a>
       </div>
 
       <div id="navbar-collapse" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a id="white" href="index.html" data-nav-section="welcome">Home</a></li>
-          <li><a id="white" onclick="window.open ('about.html', '_self')" return false" href="javascript:void(0);">About</a></li>
-          <li><a id="white" onclick="window.open ('/franchise.html', '_self'); return false" href="javascript:void(0);">Franchise</a></li>
+          <li class="active"><a id="white" data-nav-section="welcome">Home</a></li>
+          <li><a id="white" onclick="window.open ('about.html', '_self')" href="javascript:void(0);">About</a></li>
+          <li><a id="white" onclick="window.open ('/franchise.html', '_self');" href="javascript:void(0);">Franchise</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <section class="flexslider ex1" data-section="welcome">
-    <div id="overlay" class="slides">
+    <div id="overlay">
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
               <div id="text" class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                <h1 id="text" class="primary-heading shadow">Welcome to The Fatfox</h1>
+                <h2 class="text colr shadow">Click here to <a id="white" class="colr underline" href="https://wa.link/2bv0rp">ORDER</a></h2>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <h1 id="text" class="primary-heading shadow"><button class="button-order">Order Now</button></h1>
+    <!-- <h1 id="text" class="primary-heading shadow">Welcome to the Fatfox<br>click here to order<br><button class="button-order">Order Now</button></h1> -->
   </section>
 
   <section class="probootstrap-section-feat probootstrap-heading1 text-center">
@@ -314,7 +320,7 @@
             <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
               <div class="image" style="background-image: url(img/beverages.jpg);"></div>
               <div class="text text-center">
-                <h3>SHAKES AND COOLERS</h3>
+                <h3>BEVERAGES</h3>
                 <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
               </div>
             </div>
