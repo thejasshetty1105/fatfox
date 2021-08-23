@@ -1964,7 +1964,7 @@ section[data-section="menu"] {
 }
 
 .flexslider .probootstrap-slider-text {
-  margin-top: 300px;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 480px) {
