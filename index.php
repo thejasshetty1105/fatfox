@@ -385,17 +385,17 @@
           <p><br>If you have any requirements, queries or suggestions, our team is always happy to assist you. Get in touch with us using this contact form.</p>
         </div>
         <div class="col-md-6 col-md-push-1 probootstrap-animate">
-          <form method="post" action="javascript:sendmail()" class="probootstrap-form">
+          <form method="post" action="insert.php" class="probootstrap-form">
             <div class="form-group">
               <label for="c_name">Your Name</label>
               <div class="form-field">
-                <input type="text" id="c_name" class="form-control">
+                <input type="text" name="c_name" id="c_name" class="form-control"/>
               </div>
             </div>
             <div class="form-group">
               <label for="c_email">Your Email</label>
               <div class="form-field">
-                <input type="text" id="c_email" class="form-control">
+                <input type="text" name="c_email" id="c_email" class="form-control"/>
               </div>
             </div>
             <div class="form-group">
