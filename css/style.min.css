@@ -771,7 +771,7 @@ section[data-section="menu"] {
   }
 
   .probootstrap-section {
-    padding-top: 3em;
+    padding-top: 0;
   }
 }
 
@@ -1905,7 +1905,7 @@ section[data-section="menu"] {
 @media screen and (max-width: 768px) {
   .probootstrap-heading .primary-heading-partner {
     font-size: 33px;
-    margin:-50px 0;
+    margin:260px 0;
   }
 }
 
@@ -2381,10 +2381,34 @@ section[data-section="menu"] {
   justify-content: space-around;
 }
 
+#overlay-meet {
+  position: relative;
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .shadow {
   text-shadow: 3px 3px 5px black;
 }
 
 .shadow-box {
   box-shadow: 5px 5px 5px black;
+}
+
+.location-del{
+  margin-top: 8px;
+  font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  .location-del{
+    font-size: 20px;
+    margin-bottom: 0;
+  }
 }
