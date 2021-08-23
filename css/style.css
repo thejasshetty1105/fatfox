@@ -778,6 +778,7 @@ section[data-section="menu"] {
 .probootstrap-section-feat {
   padding-top: 5em;
   padding-bottom: 5em;
+  background-color:rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 769px) {
@@ -801,7 +802,7 @@ section[data-section="menu"] {
 }
 
 .probootstrap-section.probootstrap-bg-white {
-  background: #ffffff;
+  background: #000;
 }
 
 @media screen and (max-width: 768px) {
